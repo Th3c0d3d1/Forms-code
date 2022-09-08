@@ -1,0 +1,13 @@
+.form-overall{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-header{
+    text-align: left;
+    background-color: gray;
+    width: 100%;
+}
+.form-body{
+    display: flex;
+}
