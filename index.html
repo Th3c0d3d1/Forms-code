@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/d70a160cb1.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="card">
         <form>
-            <div class="form-overall">
-                <div class="form-header">
+            <div class="overall-form">
+                <div class="card-header">
                     <p><h1>Payment Form Example</h1></p>
                 </div>
-                <div class="form-body">
+                <div class="card-body">
                     <form>
                         <div class="card-row">
                             <div class="card-num">
@@ -53,11 +56,41 @@
                             </div>
                         </div>
                         <div class="footer-row">
-                            
+                            <div class="footer-left">
+                                <p>We Accept:</p>
+                                <div class="btn-group btn-group-toggle paybackground" data-toggle="buttons">
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off">
+                                        <i class="fa-brands fa-cc-mastercard"></i>
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off">
+                                        <i class="fa-brands fa-cc-visa"></i>
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off">
+                                        <i class="fa-brands fa-cc-diners-club"></i>
+                                    </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="options" id="option3" autocomplete="off">
+                                        <i class="fa-brands fa-cc-amex"></i>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="footer-right">
+                                <p><label for="w3review">Message:</label></p>
+                                <textarea id="w3review" name="w3review" rows="4" cols="50">
+                                </textarea>
+                                <p><label for="w3review">Add any notes here.</label></p>
+                            </div>
                         </div>
                     </form>
+                    <div class="end-buttons">
+
+                    </div>
                 </div>
             </div>
         </form>
+    </div>
     </body>
 </html>
