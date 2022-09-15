@@ -6,6 +6,7 @@
         <script src="https://kit.fontawesome.com/d70a160cb1.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div class="container">
         <div class="card">
         <form>
             <div class="overall-form">
@@ -14,83 +15,95 @@
                 </div>
                 <div class="card-body">
                     <form>
-                        <div class="card-row">
-                            <div class="card-num">
+                        <div class="form-row">
+                            <div class="card-num col-md-5">
                                 <label for="formGroupExampleInput">Card #</label><br>
                                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="XXXXXXXXXXXXXXXX">
                             </div>
-                            <div class="cvc">
+                            <div class="cvc col-md-3">
                                 <label for="formGroupExampleInput2">CVC #</label><br>
                                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="0000">
                             </div>
-                            <div class="amount">
+                            <div class="amount col-md-4">
                                 <label for="formGroupExampleInput2">Amount</label><br>
                                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Amount">
                             </div>
                         </div>
-                        <div class="name-row">
-                            <div class="first-name">
+                        <div class="form-row">
+                            <div class="first-name col-md-6">
                                 <label for="formGroupExampleInput">First Name</label><br>
                                 <input type="text" class="form-control" id="formGroupExampleInput">
                             </div>
-                            <div class="last-name">
+                            <div class="last-name col-md-6">
                                 <label for="formGroupExampleInput2">Last Name</label><br>
                                 <input type="text" class="form-control" id="formGroupExampleInput2">
                             </div>
                         </div>
-                        <div class="address-row">
-                            <div class="city">
+                        <div class="form-row">
+                            <div class="city col-md-6">
                                 <label for="formGroupExampleInput2">City</label><br>
                                 <input type="text" class="form-control" id="formGroupExampleInput2">
                             </div>
-                            <div class="state">
+                            <div class="state col-md-3">
                                 <label for="cars">State</label><br>
-                                    <select id="State">
+                                    <select id="Pick a state">
                                     </select>
                             </div>
-                            <div class="zipcode">
+                            <div class="zipcode col-md-3">
                                 <div class="last-name">
                                     <label for="formGroupExampleInput2">Zipcode</label><br>
                                     <input type="text" class="form-control" id="formGroupExampleInput2">
                                 </div>
                             </div>
                         </div>
-                        <div class="footer-row">
-                            <div class="footer-left">
-                                <p>We Accept:</p>
-                                <div class="btn-group btn-group-toggle paybackground" data-toggle="buttons">
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="option2" autocomplete="off">
-                                        <i class="fa-brands fa-cc-mastercard"></i>
-                                    </label>
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="option3" autocomplete="off">
-                                        <i class="fa-brands fa-cc-visa"></i>
-                                    </label>
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="option2" autocomplete="off">
-                                        <i class="fa-brands fa-cc-diners-club"></i>
-                                    </label>
-                                    <label class="btn btn-secondary">
-                                        <input type="radio" name="options" id="option3" autocomplete="off">
-                                        <i class="fa-brands fa-cc-amex"></i>
-                                    </label>
-                                </div>
+                        <div class="form-row">
+                            <div class="footer-left col-md-6">
+                                <p><label for="w3review">We Accept</label></p>
                             </div>
-                            <div class="footer-right">
+                            <div class="footer-right col-md-6">
                                 <p><label for="w3review">Message:</label></p>
-                                <textarea id="w3review" name="w3review" rows="4" cols="50">
-                                </textarea>
-                                <p><label for="w3review">Add any notes here.</label></p>
                             </div>
                         </div>
+                        <div class="form-row">
+                          
+                                <div class="attach-radios bg-secondary rounded col-md-6">
+                                <div class="form-group">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club"></i></label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-cc-amex"></i></label>
+                                      </div>
+                                    </div>
+                                 
+                                </div>
+                                <div class="col-md-6">
+                                <textarea id="w3review" name="w3review" rows="3" cols="50">
+                                </textarea>
+                                <p><label for="w3review" class="text-muted">Add any notes here.</label></p>
+                                </div>
+                        </div>
+                        </div>
                     </form>
-                    <div class="end-buttons">
-
+                    <div class="card-footer text-right">
+                        <button class="btn btn-primary" type="submit">Cancel</button>
+                        <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
                 </div>
             </div>
         </form>
     </div>
+</div>
     </body>
 </html>
+
