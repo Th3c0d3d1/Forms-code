@@ -5,3 +5,6 @@ body{
     margin-right: 0px;
     padding-right: 1%;
 }
+.art{
+    display: flex;
+}

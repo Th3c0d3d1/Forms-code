@@ -13,20 +13,26 @@
                 <div class="card-header">
                     <p><h1>Payment Form Example</h1></p>
                 </div>
+                
                 <div class="card-body">
+                    <div class="alert alert-danger" role="alert">
+                    Some fields are missing</div>
                     <form>
                         <div class="form-row">
                             <div class="card-num col-md-5">
                                 <label for="formGroupExampleInput">Card #</label><br>
-                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="XXXXXXXXXXXXXXXX">
+                                <input type="number" class="form-control" id="formGroupExampleInput" placeholder="XXXXXXXXXXXXXXXX">
                             </div>
                             <div class="cvc col-md-3">
                                 <label for="formGroupExampleInput2">CVC #</label><br>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="0000">
+                                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="0000">
                             </div>
                             <div class="amount col-md-4">
                                 <label for="formGroupExampleInput2">Amount</label><br>
-                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Amount">
+                                <div class="input-group">
+                                    <span>$</span>
+                                    <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="Amount">
+                                </div>
                             </div>
                         </div>
                         <div class="form-row">
@@ -45,58 +51,109 @@
                                 <input type="text" class="form-control" id="formGroupExampleInput2">
                             </div>
                             <div class="state col-md-3">
-                                <label for="cars">State</label><br>
-                                    <select id="Pick a state">
-                                    </select>
+                                <label for="cars">State</label><br> 
+                                <select class="form-control" id="state" name="state">
+                                    <option value="">Pick a state</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DC">District of Columbia</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NY">New York</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="PR">Puerto Rico</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
                             </div>
                             <div class="zipcode col-md-3">
                                 <div class="last-name">
                                     <label for="formGroupExampleInput2">Zipcode</label><br>
-                                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                                    <input type="number" class="form-control" id="formGroupExampleInput2">
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="footer-left col-md-6">
-                                <p><label for="w3review">We Accept</label></p>
+                                <p><label for="w3review">We Accept:</label></p>
                             </div>
                             <div class="footer-right col-md-6">
                                 <p><label for="w3review">Message:</label></p>
                             </div>
                         </div>
-                        <div class="form-row">
-                          
-                                <div class="attach-radios bg-secondary rounded col-md-6">
-                                <div class="form-group">
+                        <div class="form-row">    
+                            <div class="attach-radios col-md-6">
+                                <div class="form-group rounded bg-secondary col-5 text-center art">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard"></i></label>
-                                      </div>
-                                      <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa"></i></label>
-                                      </div>
-                                      <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
-                                        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club"></i></label>
-                                      </div>
-                                      <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
-                                        <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-cc-amex"></i></label>
-                                      </div>
+                                        <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard text-white"></i></label>
                                     </div>
-                                 
-                                </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa text-white"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                        <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-diners-club text-white"></i></label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                        <label class="form-check-label" for="inlineRadio4"><i class="fa-brands fa-cc-amex text-white"></i></label>
+                                    </div>
+                                </div>   
+                            </div>
                                 <div class="col-md-6">
-                                <textarea id="w3review" name="w3review" rows="3" cols="50">
+                                <textarea id="w3review" name="w3review" rows="3" class="form-control">
                                 </textarea>
-                                <p><label for="w3review" class="text-muted">Add any notes here.</label></p>
+                                <p><label for="w3review" class="text-muted"><small>Add any notes here.</small></label></p>
                                 </div>
                         </div>
                         </div>
                     </form>
                     <div class="card-footer text-right">
-                        <button class="btn btn-primary" type="submit">Cancel</button>
+                        <button class="btn btn-secondary" type="submit">Cancel</button>
                         <button class="btn btn-primary" type="submit">Submit</button>
                     </div>
                 </div>
